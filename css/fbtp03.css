@@ -1,0 +1,94 @@
+
+    .wrap{
+      width: 100vw;
+      height: 100vh;
+      background-color: #efeff4;
+    }
+    header{
+      width: 100%;
+    }
+    header .top{
+      width: 6.9rem;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+    header .top .fbtp-a img{
+      width: 0.28rem;
+      float: left;
+    }
+    header .top h4{
+      font-size: 16px;
+      float: left;
+      margin-left: 0.25rem;
+    }
+    header .top a:nth-child(3){
+     color: #000;
+      float: right;
+      font-size: 16px;
+    }
+    section{
+      width: 6.9rem;
+      margin: 0 auto;
+    }
+    section .fb{
+      width: 6.3rem;
+      border: 1px solid #00676a;
+      background: rgba(255, 255, 255, 0);
+      color: #000;
+      padding: 0.3rem;
+    }
+    section .fb p{
+      color: #818181;
+      font-size: 14px;
+      padding-bottom: 2.88rem;
+    }
+    section .fb span{
+      padding: 0.15rem 0.28rem;
+      font-size: 12px;
+      color: #fff;
+      background-color: #f37b5b;
+    }
+    section .fb .fb-img{
+      padding-top: 0.4rem;
+    }
+    section .fb .fb-img img{
+      width: 1.45rem;
+      float: left;
+      margin-right: 0.21rem;
+    }
+    footer{
+      width: 6.9rem;
+      margin: 0 auto;
+      margin-top: 1px;
+    }
+    footer>div{
+      width: 6.3rem;
+      color: #fff;
+      background-color: #35b0ab;
+      padding: 0 0.3rem;
+      line-height: 3.5;
+      font-size: 14px;
+    }
+    footer>div span{
+      float: left;
+    }
+    footer>div a{
+      color: #fff;
+      float: right;
+      background-image: url('../images/fbtpfanhui1.png');
+      padding-right: 0.5rem;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    footer>div:last-child{
+      margin-top: 2px;
+    }
+    footer>div:last-child a{
+      width: 0.63rem;
+      background-image: none;
+      margin-top: 0.1rem;
+      padding-right: 0;
+    }
+    footer>div:last-child a img{
+      width: 100%;
+    }

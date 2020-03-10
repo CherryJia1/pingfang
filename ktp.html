@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>看图片</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/ktp.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top clearfix">
+        <a class="ktp-a" href="javascript:;"><img src="./images/htfanhui.png" alt=""></a>
+        <h4>看图片</h4>
+        <a href="#"><img src="./images/htfdj.png" alt=""></a>
+      </div>
+    </header>
+    <section>
+      <div class="sec-top">
+        <ul class="clearfix">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">客厅</a></li>
+          <li><a href="#">餐厅</a></li>
+          <li><a href="#">卧室</a></li>
+          <li><a href="#">书房</a></li>
+          <li><a href="#">厨房</a></li>
+          <li><a href="#">卫生间</a></li>
+        </ul>
+        <ul class="clearfix">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">北欧</a></li>
+          <li><a href="#">日式</a></li>
+          <li><a href="#">中式</a></li>
+          <li><a href="#">美式</a></li>
+          <li><a href="#">现代</a></li>
+          <li><a href="#">欧式</a></li>
+        </ul>
+      </div>
+      <div class="box-wrapper">
+        <!-- <div style="margin-top:0px" class="box">
+          <img src="./images/ktp1.png" alt="">
+          <p>室内装修材料的选择，主要分高低档。但是不论高档还是抵挡，最好是...选品牌较大的公司的产品。因为大品牌的质量比较有保障，无论是</p>
+          <img src="./images/authorpic1.png" alt="">
+          <span>XXXXX</span>
+          <a href="#"><i class="iconfont icon-dianzan"></i> 112</a>
+        </div>-->
+      </div>
+    </section>
+    <footer>
+      <ul class="clearfix">
+        <li><a href="tuijian.html"><i class="iconfont icon-shouye footer-active"></i>首页</a></li>
+        <li><a href="zhuangxiu.html"><i class="iconfont icon-zhuangxiu"></i>装修</a></li>
+        <li><a href="tianjia.html"></a></li>
+        <li><a href="shangcheng.html"><i class="iconfont icon-shangcheng"></i>商城</a></li>
+        <li><a href="my.html"><i class="iconfont icon-wodedangxuan"></i>我的</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    var ktpArr = [
+      {
+        muniImg: './images/ktp1.png',
+        info: '室内装修材料的选择，主要分高低档。但是不论高档还是抵挡，最好是...选品牌较大的公司的产品。因为大品牌的质量比较有保障，无论是',
+        authorPic: './images/authorpic1.png',
+        userName: 'XXXX',
+        zan: '231',
+      },
+      {
+        muniImg: './images/ktp4.png',
+        info: '家就是要住的舒服，住的舒心，毕竟家是在未来几十年要生活时间最多...的地方，如果需要返修也是非常闹心的事情呢。那么在装修的时候',
+        authorPic: './images/authorpic5.png',
+        userName: 'XXXX',
+        zan: '231',
+      },
+      {
+        muniImg: './images/ktp2.png',
+        info: '普通装修肯定是要采用一些普通的材料了，卧室，客厅，阳台灯一些地...方可以采用一些普通的地砖，墙面上在粉刷的时候，可以采用一些',
+        authorPic: './images/authorpic3.png',
+        userName: 'XXXX',
+        zan: '231',
+      },
+      {
+        muniImg: './images/ktp3.png',
+        info: '随着时代的不断发展，建筑材料品牌层出不穷，产品种类更是多不可数...，在材质、价格方面也都是不一样的，每个消费者的喜好、经济能',
+        authorPic: './images/authorpic1.png',
+        userName: 'XXXX',
+        zan: '231',
+      },
+      {
+        muniImg: './images/ktp5.png',
+        info: '密封条封闭不严会造成油烟、灰尘、昆虫等进入，目前已有橱柜品牌推...出的防蟑静音封边的柜体，柜门关闭时冲击力得以缓解，消除噪音',
+        authorPic: './images/authorpic2.png',
+        userName: 'XXXX',
+        zan: '231',
+      },
+      {
+        muniImg: './images/ktp6.png',
+        info: '我相信每个人在辛苦工作一天之后,最幸福的事情就是回到自己的家中,躺...在沙发上,消除一天的烦恼.所以一个舒适的家居环境就尤为',
+        authorPic: './images/authorpic4.png',
+        userName: 'XXXX',
+        zan: '231',
+      }
+
+    ]
+    ktpArr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var ktpDiv = $('<div class="box">')
+      ktpDiv.html(`
+      <img src="${val.muniImg}">
+      <p>${val.info}</p>
+      <img src="${val.authorPic}"/>
+      <span>${val.userName}</span>
+      <span><i class="iconfont icon-dianzan"></i>${val.zan}</span>`)
+      //console.log(muniDiv.html())
+      $('.box-wrapper').append(ktpDiv)
+    })
+
+    $('.ktp-a').tap(function () {
+      history.back()
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background-color: #efeff4;
+}
+header{
+  width: 100%;
+  padding-top: 0.2rem;
+}
+header input{
+  width: 6.9rem;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  line-height: 30px;
+  background-color: #dddee1;
+  border: 0;
+  outline: none;
+  display: block;
+  border-radius: 5px;
+}
+header img{
+  width: 100%;
+}
+section{
+  width: 6.9rem;
+  margin: 0 auto;
+}
+section h3{
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+section li{
+  width: 2.12rem;
+  float: left;
+  margin-right: 0.27rem;
+  position: relative;
+}
+section li:nth-child(3),section li:nth-child(6){
+  margin-right: 0;
+}
+section li img{
+  width: 100%;
+}
+section li span{
+  font-size: 16px;
+  position: absolute;
+  top: 0.18rem;
+  left: 0.18rem;
+}

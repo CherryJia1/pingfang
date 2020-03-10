@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发布图片03</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/fbtp03.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top clearfix">
+        <a class="fbtp-a" href="javescript:;"><img src="./images/fbtpfanhui.png" alt=""></a>
+        <h4>发布图片</h4>
+        <a href="#">发布</a>
+      </div>
+    </header>
+    <section>
+      <div class="fb">
+        <p>说说关于这张图片的故事吧</p>
+        <span>添加标签</span>
+        <div class="fb-img clearfix">
+          <img src="./images/fbtp1.png" alt="">
+          <img src="./images/fbtp2.png" alt="">
+          <img src="./images/fbtp3.png" alt="">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="clearfix">
+        <span>关联商品</span>
+        <a href="#">未选择</a>
+      </div>
+      <div class="clearfix">
+        <span>本内容由我原创</span>
+        <a href="#"><img src="./images/fbtp4.png" alt=""></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    $('.fbtp-a').tap(function () {
+      history.back()
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+
+    .wrap{
+      width: 100%;
+      background-color: #efeff4;
+    }
+    header{
+      width: 100%;
+    }
+    header .top{
+      width: 6.9rem;
+      margin: 0 auto;
+      padding: 10px 0;
+      border-bottom: 1px solid #c5c5c5;
+    }
+    header .top .ktp-a img{
+      width: 0.28rem;
+      float: left;
+    }
+    header .top h4{
+      font-size: 18px;
+      float: left;
+      margin-left: 0.25rem;
+      margin-top: -0.05rem;
+    }
+    header .top a:nth-child(3) img{
+      width: 0.38rem;
+      float: right;
+    }
+    section{
+      width: 6.9rem;
+      margin: 0 auto;
+      padding-bottom: 70px;
+    }
+    .sec-top{
+      padding: 0.3rem 0;
+    }
+    .sec-top ul:last-child{
+      margin-top: 0.2rem;
+    }
+    .sec-top ul li{
+      float: left;
+      margin-right: 0.3rem;
+    }
+    .sec-top ul li a{
+      font-size: 14px;
+      text-align: center;
+      color: #111;
+      display: block;
+    }
+    .sec-top ul li:first-child a{
+      width: 0.84rem;
+      border-radius: 10px;
+      background-color: #072819;
+      color: #fff;
+      padding: 0 0.15rem;
+    }
+    .box {
+      /* width: 3.3rem; */
+      /* height:225px; */
+      margin-top:1.25rem;
+      /* -moz-page-break-inside:avoid; */
+      -webkit-column-break-inside:avoid;
+      break-inside:avoid;
+    }
+    .spe {
+      width: 3.3rem;
+      /* height:123px; */
+    }
+    .box-wrapper {
+      /* width: 6.9rem; */
+      -moz-column-count:2;
+      /* Firefox */
+            -webkit-column-count:2;
+      /* Safari 和 Chrome */
+            column-count:2;
+      -moz-column-gap:1em;
+      -webkit-column-gap:1em;
+      column-gap:1em;
+    }
+    .box-wrapper>.box:first-child{
+      margin-top: 0;
+    }
+    .box img:nth-child(1){
+      width: 100%;
+    }
+    .box p{
+      width: 100%;
+      font-size: 12px;
+      margin-top: 0.1rem;
+      line-height: 1.5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;/*超出3行部分显示省略号，去掉该属性 显示全部*/
+      -webkit-box-orient: vertical;
+    }
+    .box img:nth-child(3){
+      width: 0.7rem;
+      margin-top: 0.1rem;
+      float: left;
+    }
+    .box span:nth-child(4){
+      float: left;
+      font-size: 14px;
+      display: block;
+      margin-left: 0.1rem;
+      line-height: 2.9;
+    }
+    .box span:nth-child(5){
+      float: right;
+      margin-top: 0.2rem;
+      color: #072819;
+      font-size: 14px;
+    }

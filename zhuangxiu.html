@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>装修页面</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/zhuangxiu.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <input type="text">
+      <img src="./images/zhuangxiujie.png" alt="">
+    </header>
+    <section>
+      <h3>装修前期</h3>
+      <ul class="clearfix">
+        <li><a href="qianqi.html"><img src="./images/zhuangxiu1.png" alt=""></a><span>前期准备</span></li>
+        <li><a href="#"><img src="./images/zhuangxiu2.png" alt=""></a><span>材料</span></li>
+        <li><a href="#"><img src="./images/zhuangxiu3.png" alt=""></a><span>配色</span></li>
+        <li><a href="#"><img src="./images/zhuangxiu4.png" alt=""></a><span>动线布局</span></li>
+        <li><a href="#"><img src="./images/zhuangxiu5.png" alt=""></a><span>前期预算</span></li>
+        <li><a href="#"><img src="./images/zhuangxiu6.png" alt=""></a><span>布局</span></li>
+      </ul>
+    </section>
+    <footer>
+      <ul class="clearfix">
+        <li><a href="tuijian.html"><i class="iconfont icon-shouye"></i>首页</a></li>
+        <li><a href="zhuangxiu.html"><i class="iconfont icon-zhuangxiu footer-active"></i>装修</a></li>
+        <li><a href="tianjia.html"></a></li>
+        <li><a href="shangcheng.html"><i class="iconfont icon-shangcheng"></i>商城</a></li>
+        <li><a href="my.html"><i class="iconfont icon-wodedangxuan"></i>我的</a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    $('footer li').tap(function () {
+      // var inde = $('footer li').index()
+      // console.log(inde)
+      $(this).children(a).addClass('footer-active')
+      $(this).siblings().removeClass('footer-active')
+    })
+  </script>
+</body>
+
+</html>

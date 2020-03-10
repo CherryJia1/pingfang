@@ -1,0 +1,99 @@
+
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background-color: #35b0ab;
+}
+header{
+  width: 100%;
+}
+header .top{
+  width: 6.9rem;
+  margin: 0 auto;
+  padding-bottom: 0.2rem;
+  padding-top: 0.7rem;
+}
+header .top  img{
+  width: 0.45rem;
+  float: left;
+}
+header .top h4{
+  font-size: 14px;
+  float: left;
+  color: #fff;
+  margin-left: 0.2rem;
+}
+header .top span{
+  font-size: 14px;
+  color: #fff;
+  float: right;
+}
+section{
+  width: 6.9rem;
+  margin: 0 auto;
+}
+section .top1 img{
+  width: 100%;
+}
+section .top1 p{
+  font-size: 16px;
+  color: #fff;
+  float: left;
+  margin-top: 0.25rem;
+}
+section .top1 span{
+  font-size: 12px;
+  padding: 0.15rem 0.27rem;
+  float: right;
+  color: #fff;
+  display: block;
+  background-color: #f37b5b;
+  border-radius: 4px;
+  margin-top: 0.2rem;
+}
+section>ul{
+  width: 5.6rem;
+  margin: 0 auto;
+  padding-top: 2.7rem;
+  padding-bottom: 2rem;
+}
+section>ul li{
+  width: 1.39rem;
+  float: left;
+}
+section>ul li:nth-child(2){
+  margin: 0 0.68rem 0 0.68rem;
+}
+section>ul li a{
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  padding-top: 74px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-position: center 12px; */
+}
+section>ul li:nth-child(1) a{
+  background-image: url('../images/tj1.png');
+}
+section>ul li:nth-child(2) a{
+  background-image: url('../images/tj2.png');
+  
+}
+section>ul li:nth-child(3) a{
+  background-image: url('../images/tj3.png');
+}
+.close{
+  width: 0.75rem;
+  margin: 0 auto;
+ margin-bottom: 0.1rem;
+}
+.close a{
+  display: block;
+  margin-top: -0.3rem;
+}
+.close img{
+  width: 100%;
+  cursor: pointer;
+}

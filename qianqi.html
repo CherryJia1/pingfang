@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>前期准备</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/qianqi.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="qianqi">
+        <img src="./images/qianqi-head.png" alt="">
+        <a href="javascript:;" class="fanhui"><img src="./images/fanhui.png" alt=""></a>
+        <a href="#" class="fenxiang"><img src="./images/qqfenxiang.png" alt=""></a>
+        <h3>前期准备</h3>
+        <p>小户型房子的装修让很多年轻人头疼，随便装修吧不像样，新房总得有新气象。装修成豪华欧式吧，太过奢华，花销也大，重点是也不知道该怎么装修设计才能把小户型房间最大化的利用起来今天老友 就给大家解决修成豪华欧式吧。</p>
+      </div>
+    </header>
+    <section>
+      <div class="zhuanjia clearfix">
+        <h3>专家经验</h3>
+        <span>查看全部</span>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!--  <div class="swiper-slide clearfix">
+               <img class="zjimg" src="./images/zhuanjia1.png" alt="">
+              <p>如何选择适合自己的床垫</p>
+              <img class="zjau" src="./images/zjauthor1.png" alt="">
+              <span>WILL.K</span> 
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <div class="zhuyou clearfix">
+        <h3>住友经验</h3>
+        <span>查看全部</span>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide clearfix">
+              <img class="zyimg" src="./images/zhuanjia1.png" alt="">
+              <p>如何选择适合自己的床垫</p>
+              <img class="zyau" src="./images/zjauthor1.png" alt="">
+              <span>WILL.K</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="zydzl clearfix">
+        <h3>住友都在聊</h3>
+        <span>关于前期准备的全部话题</span>
+        <article class="zydzl1 clearfix">
+          <h3>说说你家最特别的设计</h3>
+          <p>家里空间小，所以自然要有所取舍，并根据自己的生活习惯做些设1.斯卡帕楼梯，因为有个小阁楼，但是厅又很小，没法做一个敞亮的大楼梯</p>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="./images/zydzl1.png" alt="">
+        </article>
+      </div> -->
+      <div class="tupian clearfix">
+        <h3>图片</h3>
+        <span>查看全部</span>
+        <img src="./images/tupian1.png" alt="">
+        <div class="tpright">
+          <img src="./images/tupian2.png" alt="">
+          <img src="./images/tupian3.png" alt="">
+        </div>
+      </div>
+      <div class="tuijian"></div>
+    </section>
+    <footer>
+      <ul class="clearfix">
+        <li><a href="tuijian.html"><i class="iconfont icon-shouye"></i>首页</a></li>
+        <li><a href="zhuangxiu.html"><i class="iconfont icon-zhuangxiu footer-active"></i>装修</a></li>
+        <li><a href="tianjia.html"></a></li>
+        <li><a href="shangcheng.html"><i class="iconfont icon-shangcheng"></i>商城</a></li>
+        <li><a href="my.html"><i class="iconfont icon-wodedangxuan"></i>我的</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+
+    var zhuanjiaArr = [
+      {
+        zjImg: './images/zhuanjia1.png',
+        info: '如何选择适合自己的床垫',
+        authorPic: './images/zjauthor1.png',
+        userName: 'WILL.K',
+      },
+      {
+        zjImg: './images/zhuanjia2.png',
+        info: '前期预算怎么核算',
+        authorPic: './images/zjauthor2.png',
+        userName: '安桥',
+      },
+      {
+        zjImg: './images/zhuanjia1.png',
+        info: '如何选择适合自己的床垫',
+        authorPic: './images/zjauthor1.png',
+        userName: 'WILL.K',
+      },
+      {
+        zjImg: './images/zhuanjia2.png',
+        info: '前期预算怎么核算',
+        authorPic: './images/zjauthor2.png',
+        userName: '安桥',
+      }
+
+    ]
+
+
+    zhuanjiaArr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var zhuanjiaDiv = $('<div class="swiper-slide" style="margin-right: 30px;">')
+      zhuanjiaDiv.html(`
+      <img class="zjimg" src="${val.zjImg}">
+      <p>${val.info}</p>
+      <img class="zjau" src="${val.authorPic}"/>
+      <span>${val.userName}</span>`)
+
+      $('.zhuanjia .swiper-wrapper').append(zhuanjiaDiv)
+    })
+
+    var zhuyouArr = [
+      {
+        zyImg: './images/zhuyou1.png',
+        info: '灯具选择小技巧',
+        authorPic: './images/zyauthor1.png',
+        userName: '我就是我',
+      },
+      {
+        zyImg: './images/zhuyou2.png',
+        info: '布艺沙发如何选择',
+        authorPic: './images/zyauthor2.png',
+        userName: '豚鼠先生',
+      },
+      {
+        zyImg: './images/zhuyou1.png',
+        info: '灯具选择小技巧',
+        authorPic: './images/zyauthor1.png',
+        userName: '我就是我',
+      },
+      {
+        zyImg: './images/zhuyou2.png',
+        info: '布艺沙发如何选择',
+        authorPic: './images/zyauthor2.png',
+        userName: '豚鼠先生',
+      }
+
+    ]
+
+
+    zhuyouArr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var zhuyouDiv = $('<div class="swiper-slide" style="margin-right: 30px;">')
+      zhuyouDiv.html(`
+      <img class="zyimg" src="${val.zyImg}">
+      <p>${val.info}</p>
+      <img class="zyau" src="${val.authorPic}"/>
+      <span>${val.userName}</span>`)
+
+      $('.zhuyou .swiper-wrapper').append(zhuyouDiv)
+    })
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+    });
+
+    $('.fanhui').tap(function () {
+      history.back()
+    })
+  </script>
+</body>
+
+</html>

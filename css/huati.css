@@ -1,0 +1,94 @@
+
+    .wrap{
+      width: 100%;
+      overflow: hidden;
+      background-color: #efeff4;
+    }
+    header{
+      width: 100%;
+    }
+    header .top{
+      width: 6.9rem;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+    header .top .huati-a img{
+      width: 0.28rem;
+      float: left;
+    }
+    header .top h4{
+      font-size: 18px;
+      float: left;
+      margin-left: 0.25rem;
+      margin-top: -0.05rem;
+    }
+    header .top a:nth-child(3) img{
+      width: 0.38rem;
+      float: right;
+    }
+    header>img{
+      width: 100%;
+    }
+    section{
+      width: 100%;
+      padding-bottom: 70px;
+    }
+    section .ht-list{
+      width: 100%;
+    }
+    section .ht-list li{
+      float: left;
+      width: 20%;
+      text-align: center;
+      line-height: 1.5;
+     padding: 10px 0;
+    }
+    section .ht-list li a{
+      color: #000;
+      font-size: 14px;
+      display: block;
+    }
+    .ht-active{
+      display: block;
+      width: 0.42rem;
+      margin: 0 auto;
+      height: 3px;
+      background-color: #000;
+      margin-top: 3px;
+    }
+    section .ht-list .ht-list1{
+      margin-top: 10px;
+    }
+    section .ht-list .ht-list1:nth-child(3),section .ht-list .ht-list1:nth-child(5){
+      padding-bottom: 4rem;
+    }
+    section .ht-list .ht-list1>div {
+    width: 6.7rem;
+      margin: 0 auto;
+      padding:10px;
+      box-shadow: 0 0 12px #999;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    } 
+    section .ht-list .ht-list1>div h3{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    section .ht-list .ht-list1>div p{ 
+      font-size: 14px;
+      overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;/*超出3行部分显示省略号，去掉该属性 显示全部*/
+    -webkit-box-orient: vertical;
+    margin-top: 2px;
+    color: #3a3a3b;
+  }
+  section .ht-list .ht-list1>div span{
+    color:#969697;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-top: 0.1rem;
+    display: block;
+    float: left;
+  }

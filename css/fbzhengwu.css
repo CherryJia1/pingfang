@@ -1,0 +1,54 @@
+
+    .wrap{
+      width: 100vw;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+    header{
+      width: 100%;
+      background-color: #35b0ab;
+      padding-top: 0.2rem;
+      padding-bottom: 1.4rem;
+    }
+    header .fbcuo{
+      width: 0.45rem;
+      margin-left: 0.3rem;
+      display: block;
+    }
+    header .fbcuo img{
+      width: 100%;
+    }
+    header h3{
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      line-height: 2;
+      padding-top: 0.7rem;
+    }
+    header p{
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      line-height: 2;
+    }
+    section .list{
+      width: 6.9rem;
+      margin: 0 auto;
+      margin-top: 0.5rem;
+    }
+    section .list li{
+      padding-left: 0.25rem;
+      width: 95%;
+      float: left;
+      font-size: 18px;
+      line-height: 3.5;
+    }
+    section .list li a{
+      color: #555555;
+      /* width: 0.16rem; */
+      /* padding-top: 0.28rem; */
+      display: block;
+      background-image: url('../images/fbfanhui.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+    }

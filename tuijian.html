@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>推荐页面</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/tuijian.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top clearfix">
+        <span></span>
+        <ul class="clearfix">
+          <li><a href="guanzhu.html">关注</a></li>
+          <li><a href="tuijian.html">推荐</a></li>
+        </ul>
+        <span></span>
+      </div>
+      <div class="serach"><input type="text" placeholder="大家都在搜：出租屋如何解决收纳"></div>
+      <div class="zhineng">
+        <ul class="clearfix">
+          <li><a href="zhineng.html"></a>智能生成</li>
+          <li><a href="ktp.html"></a>看图片</li>
+          <li><a href="fwal.html"></a>整屋案例</li>
+          <li><a href="huati.html"></a>话题讨论</li>
+        </ul>
+      </div>
+      <div class="top-pic">
+        <img src="./images/top-pic.png" alt="">
+      </div>
+    </header>
+    <section>
+      <div class="muni clearfix">
+        <!-- <div class="muni-top clearfix">
+          <img class="authorpic" src="./images/authorpic1.png" alt="">
+          <span class="username">木你的热黑</span>
+          <span class="guanzhu">关注</span>
+        </div>
+        <div class="muni-pic">
+          <img class="muni-img" src="./images/img2.png" alt="">
+          <p class="info">简约风格如何打造空间的质感与色彩层次</p>
+          <p class="info-bottom">#现代简约#空间层次#空间质感</p>
+        </div>
+        <div class="muni-bottom clearfix">
+          <a href="#"><i class="iconfont icon-fenxiang"></i></a>
+          <div class="liuyan clearfix">
+            <a href="#"><i class="iconfont icon-liuyanfill"></i></a>
+            <a href="#"><i class="iconfont icon-xingxing1"></i></a>
+            <a href="#"><i class="iconfont icon-dianzan"></i></a>
+          </div>
+        </div> -->
+      </div>
+      <div class="banner1 clearfix">
+        <h3>住友们都在找</h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/tuijian1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/tuijian2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/tuijian3.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/tuijian2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/tuijian1.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="ceping">
+        <img src="./images/ceping.png" alt="">
+      </div>
+      <div class="muni1 clearfix">
+        <!-- <img class="authorpic" src="./images/authorpic1.png" alt="">
+        <span class="username">木你的热黑</span>
+        <span class="guanzhu">关注</span>
+        <p class="info">简约风格如何打造空间的质感与色彩层次
+        </p>
+        <img class="muni-img1" src="./images/muni1-1.png" alt="">
+        <img class="muni-img2" src="./images/muni1-1.png" alt="">
+        <img class="muni-img3" src="./images/muni1-1.png" alt="">
+        <a href="#"><i class="iconfont icon-fenxiang"></i></a>
+        <a href="#"><i class="iconfont icon-liuyanfill"></i></a>
+        <a href="#"><i class="iconfont icon-xingxing1"></i></a>
+        <a href="#"><i class="iconfont icon-dianzan"></i></a> -->
+
+      </div>
+    </section>
+    <footer>
+      <ul class="clearfix">
+        <li><a href="tuijian.html"><i class="iconfont icon-shouye footer-active"></i>首页</a></li>
+        <li><a href="zhuangxiu.html"><i class="iconfont icon-zhuangxiu"></i>装修</a></li>
+        <li><a href="tianjia.html"></a></li>
+        <li><a href="shangcheng.html"><i class="iconfont icon-shangcheng"></i>商城</a></li>
+        <li><a href="my.html"><i class="iconfont icon-wodedangxuan"></i>我的</a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    var muniArr = [
+      {
+        userName: '慕尼的二黑',
+        authorPic: './images/authorpic1.png',
+        muniImg: './images/img2.png',
+        info: '简约风格如何打造空间的质感与色彩层次',
+        infoBottom: '#现代简约#空间层次#空间质感',
+        guanZhu: '关注',
+        num1: 25,
+        num2: 204,
+        num3: 6,
+      },
+      {
+        userName: 'K.K',
+        authorPic: './images/authorpic2.png',
+        muniImg: './images/img3.png',
+        info: '小户型如何打造温馨美式风格',
+        infoBottom: '#小户型#美式风格',
+        guanZhu: '关注',
+        num1: 25,
+        num2: 204,
+        num3: 6,
+      },
+
+    ]
+
+
+    muniArr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var muniDiv = $('<div>')
+      muniDiv.html(`
+      <img class="authorpic" src="${val.authorPic}"/>
+      <span class="username">${val.userName}</span>
+      <span class="guanzhu">${val.guanZhu}</span>
+      <img class="muni-img" src="${val.muniImg}">
+      <p class="info">${val.info}</p>
+      <p class="info-bottom">${val.infoBottom}</p>
+      <span class="zan"><i class="iconfont icon-fenxiang"></i></span>
+      <span class="zan"><i class="iconfont icon-liuyanfill"></i>${val.num1}</span>
+      <span class="zan"><i class="iconfont icon-xingxing1"></i>${val.num2}</span>
+      <span class="zan"><i class="iconfont icon-dianzan"></i>${val.num3}</span>`)
+      //console.log(muniDiv.html())
+      $('.muni').append(muniDiv)
+      var guanZh = val.guanZhu
+      // console.log(guanZh)
+      var guan = $('.guanzhu').index()
+      var guan = false
+      $('.guanzhu').tap(function () {
+        if (guan) {
+          $(this).text('已关注').css('background-color', '#f37b5b')
+          guan = false
+        } else {
+          $(this).text('关注').css('background-color', '#072819')
+          guan = true
+        }
+
+
+      })
+      var icon = $('.muni .zan').index()
+      console.log(icon)
+      var icon = false
+      $('.muni .zan').tap(function () {
+        if (icon) {
+          $(this).css('color', '#f37b5b')
+          $(this).children('.iconfont').css('color', '#f37b5b')
+          icon = false
+        }
+        else {
+          $(this).css('color', '#072819')
+          $(this).children('.iconfont').css('color', '#072819')
+          icon = true
+        }
+      })
+    })
+
+
+    var muni1Arr = [
+      {
+        userName1: '了不起的可达鸭',
+        authorPic1: './images/authorpic1.png',
+        muniImg1: './images/muni1-1.png',
+        muniImg2: './images/muni1-2.png',
+        muniImg3: './images/muni1-3.png',
+        info1: '其实，所有新户主们在装修之前都是一头雾水的，根本不知道该怎么做，怎么买材料，怎么选品牌。其实材料的选择并不难，装修前一周可以在',
+        guanZhu1: '关注',
+        num11: 25,
+        num12: 204,
+        num13: 6,
+      }
+    ]
+    muni1Arr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var muni1Div = $('<div>')
+      muni1Div.html(`
+      <img class="authorpic" src="${val.authorPic1}"/>
+      <span class="username">${val.userName1}</span>
+      <span class="guanzhu1">${val.guanZhu1}</span>
+      <p class="info">${val.info1}</p>
+      <img class="muni-img1" src="${val.muniImg1}">
+      <img class="muni-img2" src="${val.muniImg2}">
+      <img class="muni-img3" src="${val.muniImg3}">
+      <span class="zan"><i class="iconfont icon-fenxiang"></i></span>
+      <span class="zan"><i class="iconfont icon-liuyanfill"></i>${val.num11}</span>
+      <span class="zan"><i class="iconfont icon-xingxing1"></i>${val.num12}</span>
+      <span class="zan"><i class="iconfont icon-dianzan"></i>${val.num13}</span>`)
+      //console.log(muniDiv.html())
+      $('.muni1').append(muni1Div)
+      var guanZh = val.guanZhu
+      // console.log(guanZh)
+      var guan = $('.guanzhu1').index()
+      var guan = false
+      $('.guanzhu1').tap(function () {
+        if (guan) {
+          $(this).text('已关注').css('background-color', '#f37b5b')
+          guan = false
+        } else {
+          $(this).text('关注').css('background-color', '#072819')
+          guan = true
+        }
+      })
+
+      var icon1 = $('.muni1 .zan').index()
+      var num11 = muni1Arr[num11]
+
+      console.log(num11)
+      // console.log(icon1)
+      var icon1 = false
+      $('.muni1 .zan').tap(function () {
+        if (icon1) {
+          $(this).css('color', '#f37b5b')
+          $(this).children('.iconfont').css('color', '#f37b5b')
+          // $('.muni1 span')[icon1].num11 = $('.muni1 span')[icon1].num11 * 1 + 1;
+          icon1 = false
+        }
+        else {
+          $(this).css('color', '#072819')
+          $(this).children('.iconfont').css('color', '#072819')
+          icon1 = true
+        }
+      })
+    })
+
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+    });
+    // var inde = $('footer li').index()
+    // console.log(inde)
+    $('footer li').tap(function () {
+      $(this).addClass('footer-active')
+    })
+  </script>
+</body>
+
+</html>

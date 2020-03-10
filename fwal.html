@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>房屋案例</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/fwal.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top clearfix">
+        <a class="fwal-a" href="javascript:;"><img src="./images/htfanhui.png" alt=""></a>
+        <h4>房屋案例</h4>
+        <a href="#"><img src="./images/htfdj.png" alt=""></a>
+      </div>
+    </header>
+    <section>
+      <div class="sec-top">
+        <ul class="clearfix">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">一室</a></li>
+          <li><a href="#">两室</a></li>
+          <li><a href="#">三室</a></li>
+          <li><a href="#">四室</a></li>
+          <li><a href="#">五室</a></li>
+          <li><a href="#">六室</a></li>
+        </ul>
+        <ul class="clearfix">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">60㎡以下</a></li>
+          <li><a href="#">60-90㎡</a></li>
+          <li><a href="#">90-120㎡</a></li>
+        </ul>
+        <ul class="clearfix">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">北欧</a></li>
+          <li><a href="#">日式</a></li>
+          <li><a href="#">中式</a></li>
+          <li><a href="#">美式</a></li>
+          <li><a href="#">现代</a></li>
+          <li><a href="#">欧式</a></li>
+        </ul>
+        <ul class="clearfix">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">屋主</a></li>
+          <li><a href="#">设计师</a></li>
+        </ul>
+        <ul class="clearfix">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">编辑精选</a></li>
+          <li><a href="#">最多收藏</a></li>
+          <li><a href="#">最多分享</a></li>
+        </ul>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/guanzhu1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/guanzhu2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/guanzhu3.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/guanzhu4.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/guanzhu5.png" alt=""></div>
+        </div>
+      </div>
+      <div class="fw-con">
+        <div>
+          <img src="./images/fwal1.png" alt="">
+          <h3>惬意舒适的美式两居</h3>
+          <span>二室·89平米</span>
+        </div>
+        <div>
+          <img src="./images/fwal2.png" alt="">
+          <h3>石材打造奢华大三居</h3>
+          <span>三室·158平米</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="clearfix">
+        <li><a href="tuijian.html"><i class="iconfont icon-shouye footer-active"></i>首页</a></li>
+        <li><a href="zhuangxiu.html"><i class="iconfont icon-zhuangxiu"></i>装修</a></li>
+        <li><a href="tianjia.html"></a></li>
+        <li><a href="shangcheng.html"><i class="iconfont icon-shangcheng"></i>商城</a></li>
+        <li><a href="my.html"><i class="iconfont icon-wodedangxuan"></i>我的</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+    });
+    $('.fwal-a').tap(function () {
+      history.back()
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发布整屋</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/fbzhengwu.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <a class="fbcuo" href="tianjia.html"><img src="./images/fbcuo.png" alt=""></a>
+      <h3>房子的户型是？</h3>
+      <p>不包含客厅、餐厅、厨房和洗手间</p>
+    </header>
+    <section>
+      <div class="list">
+        <ul class="clearfix">
+          <li><a href="#">一室</a></li>
+          <li><a href="#">两室</a></li>
+          <li><a href="#">三室</a></li>
+          <li><a href="#">四室</a></li>
+          <li><a href="#">五室</a></li>
+          <li><a href="#">五室以上</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    $('.fbcuo').tap(function () {
+      window.history.back()
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录页面</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/denglu.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <img src="./images/dllogo.png" alt="">
+      <span>欢迎回家</span>
+    </div>
+    <form action="">
+      <input class="user" type="text" placeholder="手机号/邮箱/用户名">
+      <input class="pass" type="password">
+      <a class="dl" href="javascript:;">登 录</a>
+      <ul class="clearfix">
+        <li><a href="#">注册账号</a></li>
+        <li><a href="#">忘记密码？</a></li>
+      </ul>
+    </form>
+    <div class="foot">
+      <ul>
+        <li><a href="#"><i class="iconfont icon-weixin"></i></a></li>
+        <li><a href="#"><i class="iconfont icon-QQ"></i></a></li>
+        <li><a href="#"><i class="iconfont icon-weibo"></i></a></li>
+      </ul><br>
+      <p>登陆代表你同意《平方用户同意》</p>
+    </div>
+  </div>
+
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+    var user = '123'
+    var pass = '123'
+    var username = false
+    var password = false
+    $('.user').blur(function () {
+      var user1 = $('.user').val()
+      console.log(user1)
+      if (user1 !== user) {
+        confirm('用户名不正确')
+      }
+      else {
+        username = true
+      }
+    })
+
+    $('.pass').blur(function () {
+      var pass1 = $('.pass').val()
+      console.log(pass1)
+      if (pass1 !== pass) {
+        confirm('密码不正确')
+      }
+      else {
+        password = true
+      }
+    })
+
+    $('.dl').tap(function () {
+      $('.user').trigger('blur')
+      $('.pass').trigger('blur')
+      if (username === true && password === true) {
+        window.location.href = './tuijian.html'
+      }
+    })
+  </script>
+</body>
+
+</html>

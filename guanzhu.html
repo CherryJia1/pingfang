@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关注页面</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/guanzhu.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top clearfix">
+        <span></span>
+        <ul class="clearfix">
+          <li><a href="guanzhu.html">关注</a></li>
+          <li><a href="tuijian.html">推荐</a></li>
+        </ul>
+        <span></span>
+      </div>
+      <div class="serach"><input type="text" placeholder="大家都在搜：出租屋如何解决收纳" /></div>
+      <div class="banner clearfix">
+        <h3>正在征集</h3>
+        <span>查看更多></span>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/guanzhu1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/guanzhu2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/guanzhu3.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/guanzhu4.png" alt=""></div>
+            <div class="swiper-slide"><img src="./images/guanzhu5.png" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <section>
+      <div class="muni">
+        <!-- <div class="muni-top clearfix">
+          <img class="authorpic" src="./images/authorpic1.png" alt="">
+          <span class="username">木你的热黑</span>
+        </div>
+        <div class="muni-pic">
+          <p class="info">简约风格如何打造空间的质感与色彩层次
+          </p>
+          <img class="muni-img" src="./images/img2.png" alt="">
+        </div>
+        <div class="muni-bottom clearfix">
+          <a href="#"><i class="iconfont icon-fenxiang"></i></a>
+          <div class="liuyan clearfix">
+            <a href="#"><i class="iconfont icon-liuyanfill"></i></a>
+            <a href="#"><i class="iconfont icon-xingxing1"></i></a>
+            <a href="#"><i class="iconfont icon-dianzan"></i></a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <ul class="clearfix">
+        <li><a href="tuijian.html"><i class="iconfont icon-shouye footer-active"></i>首页</a></li>
+        <li><a href="zhuangxiu.html"><i class="iconfont icon-zhuangxiu"></i>装修</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="shangcheng.html"><i class="iconfont icon-shangcheng"></i>商城</a></li>
+        <li><a href="my.html"><i class="iconfont icon-wodedangxuan"></i>我的</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    var muniArr = [
+      {
+        userName: '慕尼的二黑',
+        authorPic: './images/authorpic1.png',
+        muniImg: './images/img4.png',
+        info: '不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房不要小看厨房的面积只有20平米不到的区域，装修起来花上10W元的都有，所以厨房的装修注意点很多。首先您要确认好厨房的风格，厨房',
+        num1: 25,
+        num2: 204,
+        num3: 6,
+      },
+      {
+        userName: 'LY',
+        authorPic: './images/authorpic2.png',
+        muniImg: './images/img5.png',
+        info: '说起门厅过道装修与风水禁忌，也许在日常生活中并未在意，我们在装修新家的时候最多考虑的是室内选择什么样的风格，但很少有人注意到风说起门厅过道装修与风水禁忌，也许在日常生活中并未在意，我们在装修新家的时候最多考虑的是室内选择什么样的风格，但很少有人注意到风',
+        num1: 25,
+        num2: 204,
+        num3: 6,
+      },
+      {
+        userName: '不爱吃鱼的老友',
+        authorPic: './images/authorpic4.png',
+        muniImg: './images/img6.png',
+        info: '小户型房子的装修让很多年轻人头疼，随便装修吧不像样，新房总得有新气象。装修成豪华欧式吧，太过奢华，花销也大，重点是也不知道该怎小户型房子的装修让很多年轻人头疼，随便装修吧不像样，新房总得有新气象。装修成豪华欧式吧，太过奢华，花销也大，重点是也不知道该怎',
+        num1: 25,
+        num2: 204,
+        num3: 6,
+      },
+      {
+        userName: '隔壁老王',
+        authorPic: './images/authorpic5.png',
+        muniImg: './images/img7.png',
+        info: '提到装修，很多业主在装修前肯定会做很多的功课，详细的了解装修的每一个步骤以及每一个主材的大致价格，甚至细心的业主会在装修之前将提到装修，很多业主在装修前肯定会做很多的功课，详细的了解装修的每一个步骤以及每一个主材的大致价格，甚至细心的业主会在装修之前将',
+        num1: 25,
+        num2: 204,
+        num3: 6,
+      }
+    ]
+
+    muniArr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var muniDiv = $('<div>')
+      //字符串拼接
+      //goodsDiv.html('<img src="'+val.goodsPic+'"/><span class="price">'+val.goodsPrice+'</span><p>'+val.goodsInfo+'</p>')
+      // 字符串模板
+      muniDiv.html(`
+      <img class="authorpic" src="${val.authorPic}"/>
+      <span class="username">${val.userName}</span>
+      <br><p class="info">${val.info}</p>
+      <img class="muni-img" src="${val.muniImg}">
+      <span class="zan"><i class="iconfont icon-fenxiang"></i></span>
+      <span class="zan"><i class="iconfont icon-liuyanfill"></i>${val.num1}</span>
+      <span class="zan"><i class="iconfont icon-xingxing1"></i>${val.num2}</span>
+      <span class="zan"><i class="iconfont icon-dianzan"></i>${val.num3}</span>`)
+      //console.log(muniDiv.html())
+      $('.muni').append(muniDiv)
+
+      var icon = $('.muni .zan').index()
+      console.log(icon)
+      var icon = false
+      $('.muni .zan').tap(function () {
+        if (icon) {
+          $(this).css('color', '#f37b5b')
+          $(this).children('.iconfont').css('color', '#f37b5b')
+          icon = false
+        }
+        else {
+          $(this).css('color', '#072819')
+          $(this).children('.iconfont').css('color', '#072819')
+          icon = true
+        }
+      })
+    })
+    // event.preventDefault()
+
+
+
+
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+    });
+
+  </script>
+</body>
+
+</html>

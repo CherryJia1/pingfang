@@ -1,0 +1,169 @@
+
+    .wrap{
+      width: 7.5rem;
+      background-color: #ffffff;
+    }
+    header{
+      width: 100%;
+      background-color: #072819;
+      overflow: hidden;
+    }
+    header>ul{
+      float: right;
+    }
+    header>ul li{
+      float: left;
+      margin-right: 0.5rem;
+    }
+    header>ul li a .iconfont{
+      color: #fff;
+      font-size: 25px;
+    }
+    .jifen{
+      width: 7.2rem;
+      margin-left: 0.3rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+      position: relative;
+    }
+    .jifen img{
+      width: 1.7rem;
+      float: left;
+    }
+    .jifen span:nth-child(2),.jifen span:nth-child(3){
+      color: #fff;
+      display: block;
+      line-height: 1.5;
+      margin-left: 2rem;
+      /* float: left; */
+    }
+    .jifen span:nth-child(2){
+      margin-top: 0.3rem;
+      font-size: 18px;
+    }
+    .jifen span:nth-child(3){
+      margin-top: 0.1rem;
+      font-size: 16px;
+    }
+    .jifen a:nth-child(4){
+      display: block;
+      text-align: center;
+      width: 1.7rem;
+      font-size: 16px;
+      color: #fff;
+      line-height: 1.5;
+      background-color: #f37b5b;
+      border-radius: 6px;
+      position: absolute;
+      top: 50%;
+      margin-top: -12px;
+      right: -8px;
+    }
+    
+section{
+  width: 6.9rem;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+section .myimg{
+  width: 100%;
+  margin-top: 0.4rem;
+  box-shadow: 0 0 12px #999;
+}
+/* section>ul{
+  width: 6.25rem;
+  margin: 0 auto;
+} */
+section>ul li{
+  width: 1.53rem;
+  padding: 4px;
+  float: left;
+  margin-bottom: 25px;
+  /* margin: 10px; */
+}
+section>ul li a{
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  padding-top: 60px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center 12px;
+}
+section>ul li:nth-child(1) a{
+  background-image: url('../images/my1.png');
+}
+section>ul li:nth-child(2) a{
+  background-image: url('../images/my2.png');
+}
+section>ul li:nth-child(3) a{
+  background-image: url('../images/my3.png');
+}
+section>ul li:nth-child(4) a{
+  background-image: url('../images/my4.png');
+}
+section>ul li:nth-child(5) a{
+  background-image: url('../images/my5.png');
+}
+section>ul li:nth-child(6) a{
+  background-image: url('../images/my6.png');
+}
+section>ul li:nth-child(7) a{
+  background-image: url('../images/my7.png');
+}
+section>ul li:nth-child(8) a{
+  background-image: url('../images/my8.png');
+}
+section>ul li:nth-child(9) a{
+  background-image: url('../images/my9.png');
+}
+section>ul li:nth-child(10) a{
+  background-image: url('../images/my10.png');
+}
+section>ul li:nth-child(11) a{
+  background-image: url('../images/my11.png');
+}
+section>ul li:nth-child(12) a{
+  background-image: url('../images/my12.png');
+}
+section .list{
+  width: 6.9rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+section .list li{
+  padding-left: 0.25rem;
+  width: 95%;
+  float: left;
+  font-size: 18px;
+  line-height: 3.5;
+  border-bottom: 1px solid #000;
+}
+section .list li:first-child{
+  border-top: 1px solid #000;
+}
+section .list li:last-child a{
+  background-image: none;
+}
+section .list li a{
+  color: #555555;
+  /* width: 0.16rem; */
+  /* padding-top: 0.28rem; */
+  display: block;
+  background-image: url('../images/myfanhui.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+section .pingfang{
+  width: 1.27rem;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+section .pingfang img{
+  width: 100%;
+  display: block;
+
+}

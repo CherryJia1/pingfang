@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>话题讨论</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/huati.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top clearfix">
+        <a class="huati-a" href="javascript:;"><img src="./images/htfanhui.png" alt=""></a>
+        <h4>话题讨论</h4>
+        <a href="#"><img src="./images/htfdj.png" alt=""></a>
+      </div>
+      <img src="./images/htimg.png" alt="">
+    </header>
+    <section>
+      <div class="ht-list">
+        <ul class="clearfix">
+          <li><a class="atab1" href="#">全部话题</a><span class="ht-active"></span></li>
+          <li><a class="atab2" href="#">装修经验</a><span></span></li>
+          <li><a class="atab3" href="#">收纳心得</a><span></span></li>
+          <li><a class="atab4" href="#">好物测评</a><span></span></li>
+          <li><a class="atab5" href="#">生活妙招</a><span></span></li>
+        </ul>
+        <div class="ht-con">
+          <div class="ht-list1">
+          </div>
+          <div class="ht-list1">
+          </div>
+          <div class="ht-list1">
+          </div>
+          <div class="ht-list1">
+          </div>
+          <div class="ht-list1">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="clearfix">
+        <li><a href="tuijian.html"><i class="iconfont icon-shouye footer-active"></i>首页</a></li>
+        <li><a href="zhuangxiu.html"><i class="iconfont icon-zhuangxiu"></i>装修</a></li>
+        <li><a href="tianjia.html"></a></li>
+        <li><a href="shangcheng.html"><i class="iconfont icon-shangcheng"></i>商城</a></li>
+        <li><a href="my.html"><i class="iconfont icon-wodedangxuan"></i>我的</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+
+
+    var ht1Arr = [
+      {
+        htH3: '长方形客厅如何装修',
+        info: '在家居装修中，一屋的重中之重便是客厅的装修可以说客厅是一家最重要的地方，并且也是一家的财运聚集,在家居装修中，一屋的重中',
+        num1: '96',
+        num2: '116'
+      },
+      {
+        htH3: '室内装修材料怎么选择',
+        info: '其实，所有新户主们在装修之前都是一头雾水的，根本不知道该怎么做，怎么买材料，怎么选品牌。其实材其实，所有新户主们在装修之前都是一头雾水的，根本不',
+        num1: '668',
+        num2: '1586'
+      }, {
+        htH3: '大门对着厕所怎么装修',
+        info: '很多人都觉得大门对着厕所不好。原因有二：一是用户体验差，开门看见卫生间，总不是什么愉快的事情家居装修中，一屋的重中',
+        num1: '115',
+        num2: '1723'
+      },
+      {
+        htH3: '除甲醛最有效方法有哪些？ ',
+        info: '新房装修甲醛污染总是难以避免，要想快速去除甲醛异味然后入住新家，以下这些方法或许可以帮你哦。装修中，一屋的重中',
+        num1: '223',
+        num2: '856'
+      },
+      {
+        htH3: '入门即学问 门厅过道装修与风水禁忌  ',
+        info: '说起门厅过道装修与风水禁忌，也许在日常生活中并未在意，我们在装修新家的时候最多考虑的是室内选择一屋的重中',
+        num1: '163',
+        num2: '2036'
+      }
+
+    ]
+
+    ht1Arr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var ht1Div = $('<div class="clearfix">')
+      ht1Div.html(`
+        <h3>${val.htH3}</h3>
+      <p class="info">${val.info}</p>
+      <span>回答  ${val.num1}</span>
+      <span>关注  ${val.num2}</span>`)
+      //console.log(muniDiv.html())
+      $('.ht-con>div').eq(0).append(ht1Div)
+
+    })
+
+
+    var ht2Arr = [
+      {
+        htH3: '玄关',
+        info: '鞋柜的隔板不要做到头，留一点空间好让鞋子的灰能漏到最底层，水槽和燃气灶上方装灯。定地漏的位置时一定要先想好，量好尺寸。地漏最好位于砖的一边，如果在砖的中间位置的话，无论砖怎么样倾斜，地漏都不会是最低点。',
+        num1: '668',
+        num2: '1586'
+      }, {
+        htH3: '浴厕',
+        info: '卫生间瓷砖不要用颜色太素的，不仅容易脏，而且时间长了就太过平淡！',
+        num1: '96',
+        num2: '116'
+      }, {
+        htH3: '天花板',
+        info: '天花板用一种颜色就好，纯白色是很好的选择。如果是其他颜色，不与装修风格相搭配的话，整体效果将会不协调。不用太贵。',
+        num1: '115',
+        num2: '1723'
+      },
+    ]
+
+
+    ht2Arr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var ht2Div = $('<div class="clearfix">')
+      ht2Div.html(`
+        <h3>${val.htH3}</h3>
+      <p class="info">${val.info}</p>
+      <span>回答  ${val.num1}</span>
+      <span>关注  ${val.num2}</span>`)
+      //console.log(muniDiv.html())
+      $('.ht-con>div').eq(1).append(ht2Div)
+
+    })
+
+    var ht3Arr = [
+      {
+        htH3: '依照人体分布，衣服定位超简单',
+        info: '联想收纳法——依照人体分布，由上而下放置由头到脚的衣物',
+        num1: '668',
+        num2: '1586'
+      }, {
+        htH3: '直接以「厚薄」和「颜色」分类',
+        info: '许多收纳书会教导按材质和季节分类，摆放衣物。过去我也曾尝试用这种方式收纳，但却屡屡招受挫折。近年流行的衣物款式，实在很难就单一件衣服分类唯',
+        num1: '96',
+        num2: '116'
+      },
+    ]
+
+
+    ht3Arr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var ht3Div = $('<div class="clearfix">')
+      ht3Div.html(`
+        <h3>${val.htH3}</h3>
+      <p class="info">${val.info}</p>
+      <span>回答  ${val.num1}</span>
+      <span>关注  ${val.num2}</span>`)
+      //console.log(muniDiv.html())
+      $('.ht-con>div').eq(2).append(ht3Div)
+
+    })
+
+    var ht4Arr = [
+      {
+        htH3: '防雾卫浴灯镜',
+        info: '洗个澡就怕镜子都是雾气和水珠，等到干了以后还都是污渍印子。照镜子都不好照，还要经常擦洗，麻烦！建议大家选择防雾卫浴灯镜，灯光效果好，适合化妆。最重要的还有蓝牙功能，边放歌边洗澡，简直不要太爽',
+        num1: '668',
+        num2: '1586'
+      }, {
+        htH3: '抽拉式水龙头',
+        info: '伸缩式水龙头真的很实用。跟传统龙头价钱差不多，但它可以360°旋转，清洁时卫生间死角都能照顾得到。另外喜欢在洗脸池里洗头的人一定要装一个，伸缩式太方便了，不用再把头钻到洗脸池里就能冲洗了',
+        num1: '96',
+        num2: '116'
+      }, {
+        htH3: '拖鞋收纳架',
+        info: '洗澡时都得换上拖鞋，但洗完澡鞋子湿淋淋的，很容易弄脏家里其他区域。放在鞋柜里摆放也太占空间。建议大家买一个拖鞋收纳架，直接可以挂在卫生间的墙面上或门后面，方便沥水，也不占空间。如果家里鞋柜空间大，也可以安装几个，真的很实用。',
+        num1: '115',
+        num2: '1723'
+      },
+      {
+        htH3: '电热毛巾架',
+        info: '虽然不想把毛巾放在浴室，但放在哪儿好像都不太方便。不过浴室里的毛巾总是潮潮的，还容易产生异味。干脆买一个电热毛巾架，这个小架子可以自动烘干毛巾，而且还能放置衣物，平时洗完脸，擦完身子直接把毛尖搭上去，下次用又是干干的了。',
+        num1: '115',
+        num2: '1723'
+      }
+    ]
+
+
+    ht4Arr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var ht4Div = $('<div class="clearfix">')
+      ht4Div.html(`
+        <h3>${val.htH3}</h3>
+      <p class="info">${val.info}</p>
+      <span>回答  ${val.num1}</span>
+      <span>关注  ${val.num2}</span>`)
+      //console.log(muniDiv.html())
+      $('.ht-con>div').eq(3).append(ht4Div)
+
+    })
+
+    var ht5Arr = [
+      {
+        htH3: '关于窗帘的几个小创意',
+        info: '窗帘安装中也会遇到一些问题，看看这几个小创意能不能帮到你。首先是窗帘的罗马杆，之前老担心不知道怎么钉上去，后来发现有人用这样一个挂钩就解决了。',
+        num1: '668',
+        num2: '1586'
+      }, {
+        htH3: '关于灯饰的几个小创意',
+        info: '灯饰上面也可以根据自己的创意变幻出不同的效果。家里有小朋友的可以再简单的灯泡上面DIY一些美丽的图案。',
+        num1: '96',
+        num2: '116'
+      },
+    ]
+
+
+    ht5Arr.forEach(function (val, ind) {
+      // console.log(val.userName)
+      var ht5Div = $('<div class="clearfix">')
+      ht5Div.html(`
+        <h3>${val.htH3}</h3>
+      <p class="info">${val.info}</p>
+      <span>回答  ${val.num1}</span>
+      <span>关注  ${val.num2}</span>`)
+      //console.log(muniDiv.html())
+      $('.ht-con>div').eq(4).append(ht5Div)
+
+    })
+
+
+    $('.ht-con>div').eq(0).show()
+    $('.ht-con>div').eq(0).siblings().hide()
+
+    $('.ht-list>ul>li').tap(function () {
+      console.log(1)
+      $(this).children('span').addClass('ht-active')
+      $(this).siblings().children('span').removeClass('ht-active')
+
+      var ind = $(this).index()
+
+      $('.ht-con>div').eq(ind).show()
+      $('.ht-con>div').eq(ind).siblings().hide()
+    })
+
+
+    $('.huati-a').tap(function () {
+      history.back()
+    })
+  </script>
+</body>
+
+</html>

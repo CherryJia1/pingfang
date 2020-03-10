@@ -1,0 +1,89 @@
+
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background-color: #efeff4;
+}
+header{
+  width: 100%;
+}
+header .top{
+  width: 6.9rem;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+header .top .zhineng-a img{
+  width: 0.28rem;
+  float: left;
+}
+header .top h4{
+  font-size: 18px;
+  float: left;
+  margin-left: 0.25rem;
+  margin-top: -0.05rem;
+}
+header .top a:nth-child(3) img{
+  width: 0.38rem;
+  float: right;
+}
+section{
+width: 6.9rem;
+margin: 0 auto;
+}
+section .zn-top{
+  width: 100%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+section .zn-top span,footer span{
+  padding: 0.07rem 0.15rem;
+  display: block;
+  background-color: #072819;
+  color: #fff;
+  float: left;
+  font-size: 12px;
+  margin-right: 5px;
+}
+section .zn-mid{
+  position: relative;
+}
+section .zn-mid h3{
+  font-size: 20px;
+  line-height: 1.5;
+}
+section .zn-mid img:nth-child(2){
+  width: 100%;
+}
+section .zn-mid img:nth-child(3),section .zn-mid img:nth-child(4),section .zn-mid img:nth-child(5),section .zn-mid img:nth-child(6),section .zn-mid img:nth-child(7){
+  width: 1.32rem;
+  position: absolute;
+}
+section .zn-mid img:nth-child(3){
+  top: 1.63rem;
+  right: 2.25rem;
+}
+section .zn-mid img:nth-child(4){
+bottom: 3.13rem;
+right: 0.16rem;
+}
+section .zn-mid img:nth-child(5){
+  bottom: 2.13rem;
+  right: 0.97rem;
+}
+section .zn-mid img:nth-child(6){
+  top: 2.82rem;
+  right: 2.15rem;
+}
+section .zn-mid img:nth-child(7){
+  bottom: 0.25rem;
+  right: 0.3rem;
+}
+footer{
+  padding: 0.33rem 0;
+  width: 5.7rem;
+  margin-left: 0.3rem;
+}
+footer span{
+  margin-top: 0.25rem;
+}

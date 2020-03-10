@@ -1,0 +1,40 @@
+footer{
+  width: 100%;
+  padding-top: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #efeff4;
+  box-shadow: 0px 15px 50px #000;
+  z-index: 999;
+}
+footer ul{
+  height: 60px;
+}
+footer li{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+footer li a{
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: #072819;
+  display: block;
+}
+footer li a .iconfont{
+  font-size: 35px;
+  display: block;
+}
+footer li:nth-child(3) a{
+  width: 87px;
+  padding-top: 61px;
+  background-image: url('../images/tianjia.png');
+  /* background-position: 0 50px; */
+  margin-left: 5px;
+  background-size: 70%;
+}
+.footer-active{
+  color: #f37b5b;
+}

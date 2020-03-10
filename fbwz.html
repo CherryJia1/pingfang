@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发布文章</title>
+  <link rel="stylesheet" href="./css/comment.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1662035_pg56u9mbul.css">
+  <link rel="stylesheet" href="./css/fbwz.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top clearfix">
+        <a class="close" href="tianjia.html">关闭</a>
+        <div class="top-r clearfix">
+          <ul class="clearfix">
+            <li><a href="#">保存</a></li>
+            <li><a href="#">预览</a></li>
+            <li><a href="#">发布</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="./images/fbwzimg1.png" alt="">
+        <img src="./images/fbwzimg2.png" alt="">
+      </div>
+    </header>
+    <section>
+      <form action="">
+        <input type="text" placeholder="请输入标题">
+        <textarea name="" id="" cols="30" rows="10" placeholder="请输入正文"></textarea>
+      </form>
+    </section>
+  </div>
+
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+
+    $('.close').tap(function () {
+      window.history.back()
+    })
+  </script>
+</body>
+
+</html>
